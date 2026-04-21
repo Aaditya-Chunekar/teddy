@@ -37,8 +37,6 @@ teddy
 teddy your_file_name
 ```
 
-No external dependencies. No curses.
-
 ## Keybinds
 
 | Key        | Action                                      |
