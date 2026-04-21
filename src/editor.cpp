@@ -25,9 +25,11 @@ Editor::Editor() {
     if (!get_window_size(screenrows, screencols))
         throw std::runtime_error("can't get terminal size");
     screenrows -= 2; // status bar + message bar
+    write_all("\x1b[?1049h");
 }
 
 Editor::~Editor() {
+    write_all("\x1b[?1049l");
     disable_raw_mode(orig_termios);
     std::string out = clear_screen() + terminal::move_cursor(1, 1);
     write_all(out);
