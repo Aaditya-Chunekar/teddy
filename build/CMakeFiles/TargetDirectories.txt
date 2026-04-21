@@ -1,0 +1,3 @@
+C:/Users/GouriAmit/Program/C/teddy/build/CMakeFiles/teddy.dir
+C:/Users/GouriAmit/Program/C/teddy/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/GouriAmit/Program/C/teddy/build/CMakeFiles/ZERO_CHECK.dir
