@@ -119,3 +119,5 @@ src/
   left/right-flanking algorithm — edge cases will differ from spec.
 - No soft-wrap in editor pane (horizontal scroll only).
 - Kitty/sixel image rendering not implemented; images show as `[img: alt]`.
+
+inspired by [antirez/kilo](github.com/antirez/kilo)
