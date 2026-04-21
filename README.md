@@ -26,7 +26,15 @@ git clone https://github.com/Aaditya-Chunekar/teddy
 cd teddy
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
-./build/teddy 
+sudo cmake --install build
+```
+
+## Usage
+
+```
+teddy
+# or
+teddy your_file_name
 ```
 
 No external dependencies. No curses.

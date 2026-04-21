@@ -19,3 +19,4 @@ set(SOURCES
 
 add_executable(teddy ${SOURCES})
 target_include_directories(teddy PRIVATE src)
+install(TARGETS teddy RUNTIME DESTINATION bin)
