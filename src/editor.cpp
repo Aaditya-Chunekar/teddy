@@ -469,7 +469,18 @@ void Editor::process_key(int k) {
 
         case CTRL_L: case ESC:
             break;
-
+        case TAB: {
+            // insert spaces up to next 4-column tab stop
+            int spaces = 4 - (cx % 4);
+            buf.snapshot();
+            for (int i = 0; i < spaces; ++i) {
+                buf.insert_char(cy, cx, ' ');
+                ++cx;
+            }
+            update_syntax_from(cy);
+            if (is_markdown && preview_on) rebuild_preview();
+            break;
+        }    
         default:
             if (!iscntrl(k)) {
                 buf.insert_char(cy, cx, k);
